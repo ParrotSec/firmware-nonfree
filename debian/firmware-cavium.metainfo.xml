@@ -9,6 +9,7 @@ Binary firmware for Cavium LiquidIO Ethernet adapters supported by the liquidio 
   <provides>
     <firmware type="runtime">liquidio/lio_210nv_nic.bin</firmware>
     <firmware type="runtime">liquidio/lio_210sv_nic.bin</firmware>
+    <firmware type="runtime">liquidio/lio_23xx_nic.bin</firmware>
     <firmware type="runtime">liquidio/lio_410nv_nic.bin</firmware>
 
   </provides>

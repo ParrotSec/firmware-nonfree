@@ -51,18 +51,28 @@ drivers.
     <firmware type="runtime">rtlwifi/rtl8192cufw.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8192defw.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8192eefw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192eu_ap_wowlan.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8192eu_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192eu_wowlan.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8192sefw.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8712u.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723aufw_A.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723aufw_B.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723aufw_B_NoBT.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723befw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723befw_36.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_ap_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_bt.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bu_ap_wowlan.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723bu_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bu_wowlan.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723fw_B.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8723fw.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8821aefw_wowlan.bin</firmware>
     <firmware type="runtime">rtlwifi/rtl8821aefw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8821aefw_29.bin</firmware>
 
   </provides>
 </component>

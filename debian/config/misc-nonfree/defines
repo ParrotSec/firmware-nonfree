@@ -29,9 +29,10 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.16.33.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.16.33.0.bin
+ cxgb4/t6fw-1.16.33.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -59,10 +60,19 @@ files:
  go7007/s2250-1.fw
  go7007/s2250-2.fw
  go7007/wis-startrek.fw
+ hfi1_dc8051.fw
+ hfi1_fabric.fw
+ hfi1_pcie.fw
+ hfi1_platform.dat
+ hfi1_sbus.fw
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
+ i915/bxt_guc_ver8_7.bin
+ i915/bxt_huc_ver01_07_1398.bin
  i915/kbl_dmc_ver1.bin
  i915/kbl_dmc_ver1_01.bin
+ i915/kbl_guc_ver9_14.bin
+ i915/kbl_huc_ver02_00_1810.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
@@ -70,6 +80,7 @@ files:
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6.bin
  i915/skl_guc_ver6_1.bin
+ i915/skl_huc_ver01_07_1398.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -184,6 +195,9 @@ files:
  qat_c62x.bin
  qat_c62x_mmp.bin
  qat_mmp.bin
+ r8a779x_usb3_v1.dlmem
+ r8a779x_usb3_v2.dlmem
+ r8a779x_usb3_v3.dlmem
  rp2.fw
  rt2561.bin
  rt2561s.bin
@@ -212,6 +226,8 @@ files:
  v4l-cx25840.fw
  v4l-cx23885-avcore-01.fw
  vntwusb.fw
+ vpu_d.bin
+ vpu_p.bin
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
@@ -286,13 +302,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.15.37.0.bin_base]
+[cxgb4/t4fw-1.16.33.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.15.37.0
+version: 1.16.33.0
 
-[cxgb4/t5fw-1.15.37.0.bin_base]
+[cxgb4/t5fw-1.16.33.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.15.37.0
+version: 1.16.33.0
+
+[cxgb4/t6fw-1.16.33.0.bin_base]
+desc: Chelsio T6 firmware
+version: 1.16.33.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
@@ -379,13 +399,48 @@ desc: Sensoray S2250 stage 2 firmware
 [go7007/wis-startrek.fw_base]
 desc: WISchip WinFast WalkieTV firmware
 
+[hfi1_dc8051.fw_base]
+desc: hfi1 - Intel OPA Gen 1 adapter
+version: 0.47
+
+[hfi1_fabric.fw_base]
+desc: hfi1 - Intel OPA Gen 1 adapter
+version: 0x1055
+
+[hfi1_pcie.fw_base]
+desc: hfi1 - Intel OPA Gen 1 adapter
+version: 0x4755
+
+[hfi1_sbus.fw_base]
+desc: hfi1 - Intel OPA Gen 1 adapter
+version: 0x10130001
+
+[hfi1_platform.dat]
+desc: hfi1 - Intel OPA Gen 1 adapter
+
 [i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
 version: 1.07
 
+[i915/bxt_guc_ver8_7.bin_base]
+desc: Intel "Broxton" GuC firmware
+version: 8.7
+
+[i915/bxt_huc_ver01_07_1398.bin_base]
+desc: Intel "Broxton" HuC firmware
+version: 1.7
+
 [i915/kbl_dmc_ver1_01.bin_base]
 desc: Intel "Kabylake" DMC firmware
 version: 1.01
+
+[i915/kbl_guc_ver9_14.bin_base]
+desc: Intel "Kabylake" GuC firmware
+version: 9.14
+
+[i915/kbl_huc_ver02_00_1810.bin_base]
+desc: Intel "Kabylake" HuC firmware
+version: 2.0
 
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
@@ -406,6 +461,10 @@ version: 4.3
 [i915/skl_guc_ver6_1.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 6.1
+
+[i915/skl_huc_ver01_07_1398.bin_base]
+desc: Intel "Skylake" HuC firmware
+version: 1.7
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
@@ -590,6 +649,18 @@ desc: Intel QAT C62x UOF firmware
 [qat_c62x_mmp.bin_base]
 desc: Intel QAT C62x MMP firmware
 
+[r8a779x_usb3_v1.dlmem_base]
+desc: Renesas R-Car Gen2/3 USB 3.0 host controller driver
+version: 1
+
+[r8a779x_usb3_v2.dlmem_base]
+desc: Renesas R-Car Gen2/3 USB 3.0 host controller driver
+version: 2
+
+[r8a779x_usb3_v3.dlmem_base]
+desc: Renesas R-Car Gen2/3 USB 3.0 host controller driver
+version: 3
+
 [rp2.fw_base]
 desc: Comtrol RocketPort 2 firmware
 
@@ -669,3 +740,9 @@ desc: Conexant CX23885 core firmware
 
 [vntwusb.fw_base]
 desc: VIA VT6656 firmware
+
+[vpu_d.bin_base]
+desc: Mediatek VPU video processing unit driver
+
+[vpu_p.bin_base]
+desc: Mediatek VPU video processing unit driver

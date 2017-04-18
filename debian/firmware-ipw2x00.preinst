@@ -31,7 +31,7 @@ ask()
                 db_fset firmware-ipw2x00/license/accepted seen false
                 if ! db_input critical firmware-ipw2x00/license/accepted ; then
                     errmsg "firmware-ipw2x00 agree question could not be asked"
-                    exit 0
+                    exit 2
                 fi
             fi
             ;;      

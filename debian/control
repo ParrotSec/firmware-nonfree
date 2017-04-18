@@ -89,6 +89,18 @@ Description: Binary firmware for AMD/ATI graphics chips
   * amdgpu/polaris11_smc_sk.bin
   * amdgpu/polaris11_uvd.bin
   * amdgpu/polaris11_vce.bin
+  * amdgpu/polaris12_ce.bin
+  * amdgpu/polaris12_mc.bin
+  * amdgpu/polaris12_me.bin
+  * amdgpu/polaris12_mec.bin
+  * amdgpu/polaris12_mec2.bin
+  * amdgpu/polaris12_pfp.bin
+  * amdgpu/polaris12_rlc.bin
+  * amdgpu/polaris12_sdma.bin
+  * amdgpu/polaris12_sdma1.bin
+  * amdgpu/polaris12_smc.bin
+  * amdgpu/polaris12_uvd.bin
+  * amdgpu/polaris12_vce.bin
   * amdgpu/stoney_ce.bin
   * amdgpu/stoney_me.bin
   * amdgpu/stoney_mec.bin
@@ -685,8 +697,10 @@ Description: Binary firmware for Broadcom 802.11 wireless cards
   * Broadcom BCM4354 firmware, version 7.35.79.57
     (brcm/brcmfmac4354-sdio.bin)
   * Broadcom BCM4356 firmware (brcm/brcmfmac4356-pcie.bin)
+  * Broadcom BCM4356 firmware (brcm/brcmfmac4356-sdio.bin)
   * Broadcom BCM43569 firmware (brcm/brcmfmac43569.bin)
   * Broadcom BCM43570 firmware (brcm/brcmfmac43570-pcie.bin)
+  * Broadcom BCM4358 firmware (brcm/brcmfmac4358-pcie.bin)
   * Broadcom BCM43602 AP-mode firmware (brcm/brcmfmac43602-pcie.ap.bin)
   * Broadcom BCM43602 firmware (brcm/brcmfmac43602-pcie.bin)
   * Broadcom BCM4366 firmware (brcm/brcmfmac4366b-pcie.bin)
@@ -710,6 +724,7 @@ Description: Binary firmware for Cavium Ethernet adapters
  Contents:
   * Cavium LiquidIO 210Nv firmware (liquidio/lio_210nv_nic.bin)
   * Cavium LiquidIO 210Sv firmware (liquidio/lio_210sv_nic.bin)
+  * Cavium LiquidIO 23xx firmware (liquidio/lio_23xx_nic.bin)
   * Cavium LiquidIO 410Nv firmware (liquidio/lio_410nv_nic.bin)
 Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Multi-Arch: foreign
@@ -753,16 +768,20 @@ Description: Binary firmware for Intel sound DSPs
  Contents:
   * Intel "Broadwell" SST DSP firmware, version 8.4.1.77
     (intel/IntcSST2.bin)
-  * Intel "Broxton" SST DSP firmware, version 9.22.00.1118
-    (intel/dsp_fw_bxtn_v1118.bin, intel/dsp_fw_bxtn.bin)
+  * Intel "Broxton" SST DSP firmware, version 9.22.01.2219_64
+    (intel/dsp_fw_bxtn_v2219.bin, intel/dsp_fw_bxtn.bin)
+  * Intel "Geminilake" DSP firmware, version 9.92.01.1814
+    (intel/dsp_fw_glk_v1814.bin)
   * Intel "Kabylake" SST DSP firmware, version 9.21.00.1037
     (intel/dsp_fw_kbl_v1037.bin, intel/dsp_fw_kbl.bin)
-  * Intel "Skylake SST DSP firmware, version 8.20.00.958
-    (intel/dsp_fw_release_v958.bin, intel/dsp_fw_release.bin)
+  * Intel "Skylake SST DSP firmware, version 8.20.00.969
+    (intel/dsp_fw_release_v969.bin, intel/dsp_fw_release.bin)
   * Intel "Bay Trail" SST DSP firmware
     (intel/fw_sst_0f28.bin-48kHz_i2s_master)
   * Intel "Bay Trail" SST DSP firmware, version 01.0C.00.01
     (intel/fw_sst_0f28.bin)
+  * Intel "Bay Trail" firmware with SSP0 port
+    (intel/fw_sst_0f28_ssp0.bin)
   * Intel "Cherry Trail"/"Braswell" SST DSP firmware, version
     01.0B.02.02 (intel/fw_sst_22a8.bin)
 Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -895,6 +914,8 @@ Description: Binary firmware for Intel Wireless cards
     (iwlwifi-3168-21.ucode)
   * Intel Wireless 3168 firmware, version 22.361476.0
     (iwlwifi-3168-22.ucode)
+  * Intel Wireless 3168 firmware, version 27.455470.0
+    (iwlwifi-3168-27.ucode)
   * Intel Wireless 3945 firmware, version 15.32.2.9
     (iwlwifi-3945-2.ucode)
   * Intel Wireless 4965 firmware, version 228.61.2.24
@@ -949,6 +970,8 @@ Description: Binary firmware for Intel Wireless cards
     (iwlwifi-7265D-21.ucode)
   * Intel Wireless 7265D firmware, version 22.361476.0
     (iwlwifi-7265D-22.ucode)
+  * Intel Wireless 7265D firmware, version 27.455470.0
+    (iwlwifi-7265D-27.ucode)
   * Intel Wireless 8000C firmware, version 25.30.14.0
     (iwlwifi-8000C-14.ucode)
   * Intel Wireless 8000C firmware, version 16.242414.0
@@ -957,10 +980,14 @@ Description: Binary firmware for Intel Wireless cards
     (iwlwifi-8000C-21.ucode)
   * Intel Wireless 8000C firmware, version 22.361476.0
     (iwlwifi-8000C-22.ucode)
+  * Intel Wireless 8000C firmware, version 27.455470.0
+    (iwlwifi-8000C-27.ucode)
   * Intel Wireless 8265 firmware, version 21.302800.0
     (iwlwifi-8265-21.ucode)
   * Intel Wireless 8265 firmware, version 22.361476.0
     (iwlwifi-8265-22.ucode)
+  * Intel Wireless 8265 firmware, version 27.455470.0
+    (iwlwifi-8265-27.ucode)
 Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Multi-Arch: foreign
 
@@ -1013,10 +1040,12 @@ Description: Binary firmware for Marvell wireless cards
     (mrvl/pcieuart8997_combo_v4.bin)
   * Avastar 88W8997-PCIe-USB firmware, version 16.68.1.p70
     (mrvl/pcieusb8997_combo_v4.bin)
-  * 88W8688-SDIO main code (mrvl/sd8688.bin, libertas/sd8688.bin,
-    sd8688.bin)
-  * 88W8688-SDIO boot code (mrvl/sd8688_helper.bin,
-    libertas/sd8688_helper.bin, sd8688_helper.bin)
+  * PCIe8897-B0 WLAN firmware, version 16.68.1.p97
+    (mrvl/pcie8997_wlan_v4.bin)
+  * 88W8688-SDIO main code (mrvl/sd8688.bin, sd8688.bin,
+    libertas/sd8688.bin)
+  * 88W8688-SDIO boot code (mrvl/sd8688_helper.bin, sd8688_helper.bin,
+    libertas/sd8688_helper.bin)
   * Avastar 88W8787 firmware, version 14.66.35.p52
     (mrvl/sd8787_uapsta.bin)
   * Avastar 88W8797-SDIO firmware, version 14.66.11.p151
@@ -1090,10 +1119,11 @@ Description: Binary firmware for various drivers in the Linux kernel
   * Chelsio T3 main firmware, version 7.12.0 (cxgb3/t3fw-7.12.0.bin)
   * Chelsio T4 10GBASE-T firmware (AQ1202 PHY) (cxgb4/aq1202_fw.cld)
   * Chelsio T4 10GBASE-T firmware (BCM84834 PHY) (cxgb4/bcm8483.bin)
-  * Chelsio T4 firmware, version 1.15.37.0 (cxgb4/t4fw-1.15.37.0.bin,
+  * Chelsio T4 firmware, version 1.16.33.0 (cxgb4/t4fw-1.16.33.0.bin,
     cxgb4/t4fw.bin)
-  * Chelsio T5 firmware, version 1.15.37.0 (cxgb4/t5fw-1.15.37.0.bin,
+  * Chelsio T5 firmware, version 1.16.33.0 (cxgb4/t5fw-1.16.33.0.bin,
     cxgb4/t5fw.bin)
+  * Chelsio T6 firmware, version 1.16.33.0 (cxgb4/t6fw-1.16.33.0.bin)
   * DAB-USB FPGA bitfile (dabusb/bitstream.bin)
   * DAB-USB firmware (dabusb/firmware.fw)
   * Xceive 4000 tuner firmware, version 1.4.1 (dvb-fe-xc4000-1.4.1.fw)
@@ -1124,10 +1154,22 @@ Description: Binary firmware for various drivers in the Linux kernel
   * Sensoray S2250 stage 1 firmware (go7007/s2250-1.fw, s2250_loader.fw)
   * Sensoray S2250 stage 2 firmware (go7007/s2250-2.fw, s2250.fw)
   * WISchip WinFast WalkieTV firmware (go7007/wis-startrek.fw)
+  * hfi1 - Intel OPA Gen 1 adapter, version 0.47 (hfi1_dc8051.fw)
+  * hfi1 - Intel OPA Gen 1 adapter, version 0x1055 (hfi1_fabric.fw)
+  * hfi1 - Intel OPA Gen 1 adapter, version 0x4755 (hfi1_pcie.fw)
+  * hfi1_platform.dat
+  * hfi1 - Intel OPA Gen 1 adapter, version 0x10130001 (hfi1_sbus.fw)
   * Intel "Broxton" DMC firmware, version 1.07
     (i915/bxt_dmc_ver1_07.bin, i915/bxt_dmc_ver1.bin)
+  * Intel "Broxton" GuC firmware, version 8.7 (i915/bxt_guc_ver8_7.bin)
+  * Intel "Broxton" HuC firmware, version 1.7
+    (i915/bxt_huc_ver01_07_1398.bin)
   * Intel "Kabylake" DMC firmware, version 1.01
     (i915/kbl_dmc_ver1_01.bin, i915/kbl_dmc_ver1.bin)
+  * Intel "Kabylake" GuC firmware, version 9.14
+    (i915/kbl_guc_ver9_14.bin)
+  * Intel "Kabylake" HuC firmware, version 2.0
+    (i915/kbl_huc_ver02_00_1810.bin)
   * Intel "Skylake" DMC firmware, version 1.23
     (i915/skl_dmc_ver1_23.bin)
   * Intel "Skylake" DMC firmware, version 1.26
@@ -1136,6 +1178,8 @@ Description: Binary firmware for various drivers in the Linux kernel
   * Intel "Skylake" GuC firmware, version 4.3 (i915/skl_guc_ver4.bin)
   * Intel "Skylake" GuC firmware, version 6.1 (i915/skl_guc_ver6_1.bin,
     i915/skl_guc_ver6.bin)
+  * Intel "Skylake" HuC firmware, version 1.7
+    (i915/skl_huc_ver01_07_1398.bin)
   * kaweth/new_code.bin
   * kaweth/new_code_fix.bin
   * kaweth/trigger_code.bin
@@ -1252,6 +1296,12 @@ Description: Binary firmware for various drivers in the Linux kernel
   * Intel QAT C3xxx MMP firmware (qat_c3xxx_mmp.bin)
   * Intel QAT C62x UOF firmware (qat_c62x.bin)
   * Intel QAT C62x MMP firmware (qat_c62x_mmp.bin)
+  * Renesas R-Car Gen2/3 USB 3.0 host controller driver, version 1
+    (r8a779x_usb3_v1.dlmem)
+  * Renesas R-Car Gen2/3 USB 3.0 host controller driver, version 2
+    (r8a779x_usb3_v2.dlmem)
+  * Renesas R-Car Gen2/3 USB 3.0 host controller driver, version 3
+    (r8a779x_usb3_v3.dlmem)
   * Comtrol RocketPort 2 firmware (rp2.fw)
   * Ralink RT2561 (RT2501/RT5201 chipset) firmware, version 1.2
     (rt2561.bin)
@@ -1283,6 +1333,8 @@ Description: Binary firmware for various drivers in the Linux kernel
   * Conexant CX25840 firmware (v4l-cx25840.fw)
   * Conexant CX23885 core firmware (v4l-cx23885-avcore-01.fw)
   * VIA VT6656 firmware (vntwusb.fw)
+  * Mediatek VPU video processing unit driver (vpu_d.bin)
+  * Mediatek VPU video processing unit driver (vpu_p.bin)
 Homepage: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 Multi-Arch: foreign
 
@@ -1370,6 +1422,8 @@ Description: Binary firmware for QLogic HBAs
     (qed/qed_init_values_zipped-8.10.5.0.bin)
   * QLogic QL45000 series firmware, version 8.10.10.0
     (qed/qed_init_values_zipped-8.10.10.0.bin)
+  * QLogic QL45000 series firmware, version 8.15.3.0
+    (qed/qed_init_values_zipped-8.15.3.0.bin)
   * QLogic QLA1040 firmware, version 7.65.06 (qlogic/1040.bin)
   * QLogic QLA1080, 1240, 1280 firmware, version 8.15.11
     (qlogic/1280.bin)
@@ -1449,7 +1503,9 @@ Description: Binary firmware for Realtek wired/wifi/BT adapters
     (rtlwifi/rtl8192cufw.bin)
   * Realtek RTL8192DE firmware (rtlwifi/rtl8192defw.bin)
   * Realtek RTL8192EE wifi firmware (rtlwifi/rtl8192eefw.bin)
+  * Realtek RTl8192EU firmware (rtlwifi/rtl8192eu_ap_wowlan.bin)
   * Realtek RTl8192EU firmware (rtlwifi/rtl8192eu_nic.bin)
+  * Realtek RTl8192EU firmware (rtlwifi/rtl8192eu_wowlan.bin)
   * Realtek RTL8192SE/RTL8191SE firmware, version 4.816.2011
     (rtlwifi/rtl8192sefw.bin)
   * Realtek RTL8192SU/RTL8712U firmware (rtlwifi/rtl8712u.bin)
@@ -1460,11 +1516,19 @@ Description: Binary firmware for Realtek wired/wifi/BT adapters
   * Realtek RTL8723AU rev B wifi-only firmware
     (rtlwifi/rtl8723aufw_B_NoBT.bin)
   * Realtek RTL8723BE firmware (rtlwifi/rtl8723befw.bin)
+  * Realtek RTL8723BE firmware (rtlwifi/rtl8723befw_36.bin)
+  * Realtek RTL8723BS firmware (rtlwifi/rtl8723bs_ap_wowlan.bin)
+  * Realtek RTL8723BS firmware (rtlwifi/rtl8723bs_bt.bin)
+  * Realtek RTL8723BS firmware (rtlwifi/rtl8723bs_nic.bin)
+  * Realtek RTL8723BS firmware (rtlwifi/rtl8723bs_wowlan.bin)
+  * Realtek RTL8723BU firmware (rtlwifi/rtl8723bu_ap_wowlan.bin)
   * Realtek RTl8723BU firmware (rtlwifi/rtl8723bu_nic.bin)
+  * Realtek RTl8723BU firmware (rtlwifi/rtl8723bu_wowlan.bin)
   * Realtek RTL8723AE rev B firmware (rtlwifi/rtl8723fw_B.bin)
   * Realtek RTL8723AE rev A firmware (rtlwifi/rtl8723fw.bin)
   * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw_wowlan.bin)
   * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw_29.bin)
 Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Multi-Arch: foreign
 
@@ -1536,7 +1600,8 @@ Description: Binary firmware for TI Connectivity wifi and BT/FM/GPS adapters
  driver.
  .
  Contents:
-  * ti-connectivity/TIInit_7.2.31.bts
+  * TIi BlueTooth driver, version 7.2.31
+    (ti-connectivity/TIInit_7.2.31.bts)
   * TI WL1251 firmware (ti-connectivity/wl1251-fw.bin)
   * TI WL1251 reference NVS (ti-connectivity/wl1251-nvs.bin)
   * TI WL127x multi-role firmware (ti-connectivity/wl127x-fw-5-mr.bin)
@@ -1544,7 +1609,7 @@ Description: Binary firmware for TI Connectivity wifi and BT/FM/GPS adapters
     (ti-connectivity/wl127x-fw-5-plt.bin)
   * TI WL127x single-role firmware (ti-connectivity/wl127x-fw-5-sr.bin)
   * TI WL127x reference NVS (ti-connectivity/wl127x-nvs.bin,
-    ti-connectivity/wl12xx-nvs.bin, ti-connectivity/wl1271-nvs.bin)
+    ti-connectivity/wl1271-nvs.bin, ti-connectivity/wl12xx-nvs.bin)
   * TI WL128x multi-role firmware (ti-connectivity/wl128x-fw-5-mr.bin)
   * TI WL128x PLT (calibration) firmware
     (ti-connectivity/wl128x-fw-5-plt.bin)

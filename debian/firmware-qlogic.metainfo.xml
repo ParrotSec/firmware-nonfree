@@ -19,6 +19,7 @@ and qla2xxx drivers.
     <firmware type="runtime">qed/qed_init_values_zipped-8.7.3.0.bin</firmware>
     <firmware type="runtime">qed/qed_init_values_zipped-8.10.5.0.bin</firmware>
     <firmware type="runtime">qed/qed_init_values_zipped-8.10.10.0.bin</firmware>
+    <firmware type="runtime">qed/qed_init_values_zipped-8.15.3.0.bin</firmware>
     <firmware type="runtime">qlogic/1040.bin</firmware>
     <firmware type="runtime">qlogic/1280.bin</firmware>
     <firmware type="runtime">qlogic/12160.bin</firmware>

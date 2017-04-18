@@ -29,6 +29,7 @@ files:
  mrvl/pcie8897_uapsta.bin
  mrvl/pcieuart8997_combo_v4.bin
  mrvl/pcieusb8997_combo_v4.bin
+ mrvl/pcie8997_wlan_v4.bin
  mrvl/sd8688.bin
  mrvl/sd8688_helper.bin
  mrvl/sd8787_uapsta.bin
@@ -138,6 +139,10 @@ version: 16.68.1.p70
 [mrvl/pcieusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-PCIe-USB firmware
 version: 16.68.1.p70
+
+[mrvl/pcie8997_wlan_v4.bin_base]
+desc: PCIe8897-B0 WLAN firmware
+version: 16.68.1.p97
 
 [mrvl/sd8688.bin_base]
 desc: 88W8688-SDIO main code

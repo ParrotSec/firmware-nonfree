@@ -52,6 +52,18 @@ files:
  amdgpu/polaris11_smc_sk.bin
  amdgpu/polaris11_uvd.bin
  amdgpu/polaris11_vce.bin
+ amdgpu/polaris12_ce.bin
+ amdgpu/polaris12_mc.bin
+ amdgpu/polaris12_me.bin
+ amdgpu/polaris12_mec.bin
+ amdgpu/polaris12_mec2.bin
+ amdgpu/polaris12_pfp.bin
+ amdgpu/polaris12_rlc.bin
+ amdgpu/polaris12_sdma.bin
+ amdgpu/polaris12_sdma1.bin
+ amdgpu/polaris12_smc.bin
+ amdgpu/polaris12_uvd.bin
+ amdgpu/polaris12_vce.bin
  amdgpu/stoney_ce.bin
  amdgpu/stoney_me.bin
  amdgpu/stoney_mec.bin

@@ -21,6 +21,10 @@ longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
  network chips supported by the wl1251, wl12xx and wl18xx drivers and
  BT/FM/GPS chips supported by the st_drv driver
 
+[ti-connectivity/TIInit_7.2.31.bts_base]
+desc: TIi BlueTooth driver
+version: 7.2.31
+
 [ti-connectivity/wl1251-fw.bin_base]
 desc: TI WL1251 firmware
 

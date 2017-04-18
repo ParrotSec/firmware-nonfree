@@ -31,9 +31,10 @@ which are not individually large enough to warrant a standalone package.
     <firmware type="runtime">cxgb4/aq1202_fw.cld</firmware>
     <firmware type="runtime">cxgb4/bcm8483.bin</firmware>
     <firmware type="runtime">cxgb4/t4fw.bin</firmware>
-    <firmware type="runtime">cxgb4/t4fw-1.15.37.0.bin</firmware>
+    <firmware type="runtime">cxgb4/t4fw-1.16.33.0.bin</firmware>
     <firmware type="runtime">cxgb4/t5fw.bin</firmware>
-    <firmware type="runtime">cxgb4/t5fw-1.15.37.0.bin</firmware>
+    <firmware type="runtime">cxgb4/t5fw-1.16.33.0.bin</firmware>
+    <firmware type="runtime">cxgb4/t6fw-1.16.33.0.bin</firmware>
     <firmware type="runtime">dabusb/bitstream.bin</firmware>
     <firmware type="runtime">dabusb/firmware.fw</firmware>
     <firmware type="runtime">dvb-fe-xc4000-1.4.1.fw</firmware>
@@ -61,10 +62,19 @@ which are not individually large enough to warrant a standalone package.
     <firmware type="runtime">go7007/s2250-1.fw</firmware>
     <firmware type="runtime">go7007/s2250-2.fw</firmware>
     <firmware type="runtime">go7007/wis-startrek.fw</firmware>
+    <firmware type="runtime">hfi1_dc8051.fw</firmware>
+    <firmware type="runtime">hfi1_fabric.fw</firmware>
+    <firmware type="runtime">hfi1_pcie.fw</firmware>
+    <firmware type="runtime">hfi1_platform.dat</firmware>
+    <firmware type="runtime">hfi1_sbus.fw</firmware>
     <firmware type="runtime">i915/bxt_dmc_ver1.bin</firmware>
     <firmware type="runtime">i915/bxt_dmc_ver1_07.bin</firmware>
+    <firmware type="runtime">i915/bxt_guc_ver8_7.bin</firmware>
+    <firmware type="runtime">i915/bxt_huc_ver01_07_1398.bin</firmware>
     <firmware type="runtime">i915/kbl_dmc_ver1.bin</firmware>
     <firmware type="runtime">i915/kbl_dmc_ver1_01.bin</firmware>
+    <firmware type="runtime">i915/kbl_guc_ver9_14.bin</firmware>
+    <firmware type="runtime">i915/kbl_huc_ver02_00_1810.bin</firmware>
     <firmware type="runtime">i915/skl_dmc_ver1.bin</firmware>
     <firmware type="runtime">i915/skl_dmc_ver1_23.bin</firmware>
     <firmware type="runtime">i915/skl_dmc_ver1_26.bin</firmware>
@@ -72,6 +82,7 @@ which are not individually large enough to warrant a standalone package.
     <firmware type="runtime">i915/skl_guc_ver4.bin</firmware>
     <firmware type="runtime">i915/skl_guc_ver6.bin</firmware>
     <firmware type="runtime">i915/skl_guc_ver6_1.bin</firmware>
+    <firmware type="runtime">i915/skl_huc_ver01_07_1398.bin</firmware>
     <firmware type="runtime">kaweth/new_code.bin</firmware>
     <firmware type="runtime">kaweth/new_code_fix.bin</firmware>
     <firmware type="runtime">kaweth/trigger_code.bin</firmware>
@@ -186,6 +197,9 @@ which are not individually large enough to warrant a standalone package.
     <firmware type="runtime">qat_c62x.bin</firmware>
     <firmware type="runtime">qat_c62x_mmp.bin</firmware>
     <firmware type="runtime">qat_mmp.bin</firmware>
+    <firmware type="runtime">r8a779x_usb3_v1.dlmem</firmware>
+    <firmware type="runtime">r8a779x_usb3_v2.dlmem</firmware>
+    <firmware type="runtime">r8a779x_usb3_v3.dlmem</firmware>
     <firmware type="runtime">rp2.fw</firmware>
     <firmware type="runtime">rt2561.bin</firmware>
     <firmware type="runtime">rt2561s.bin</firmware>
@@ -214,6 +228,8 @@ which are not individually large enough to warrant a standalone package.
     <firmware type="runtime">v4l-cx25840.fw</firmware>
     <firmware type="runtime">v4l-cx23885-avcore-01.fw</firmware>
     <firmware type="runtime">vntwusb.fw</firmware>
+    <firmware type="runtime">vpu_d.bin</firmware>
+    <firmware type="runtime">vpu_p.bin</firmware>
 
   </provides>
 </component>

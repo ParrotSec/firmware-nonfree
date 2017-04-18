@@ -1,8 +1,29 @@
-firmware-nonfree (20161130-2parrot0) testing; urgency=medium
+firmware-nonfree (20170404-0kali1) kali-dev; urgency=medium
 
-  * Fix firmware-ipw2x00 license
+  * New upstream version
+   - Upstream version is commit b14134583c2a15d4404695f72cb523daedb877ab,
+      dated 2017-04-04
+  * libertas: Include Marvell PCIe8897-B0 WLAN firmware
+  * iwlwifi: Include new firmware for Intel Wireless 3168, 7265D, 8000C and
+    8265 (ABI 27)
+  * amd-graphics: Include microcode for "Polaris12" chips
+  * qlogic: Add QLogic QL45000 series firmware version 8.15.3.0
+  * brcm80211: Include Broadcom BCM4356 and BCM4358 firmware
+  * realtek: Include Realtek RTL8192EU WowLAN, RTL8723BS, RTL8723BU WowLAN
+  * misc/xhci-rcar: Add Renesas R-Car Gen2/3 USB 3.0 host controller driver
+    (r8a779x_usb3)
+  * intel-sound: Add binary Intel "Bay Trail" firmware for SSP0 port used in
+    many BYT variant, add Intel "Geminilake" DSP firmware, update Intel
+    "Broxton" SST DSP firmware to version 2219 and Intel "Skylake SST DSP
+    firmware to version 969
+  * liquidio: add Cavium LiquidIO 23xx firmware
+  * misc/chelsio: update Chelsio T4 and T5 firmwares to version 1.16.33.0 and
+    add Chelsio T6 version 1.16.33.0
+  * misc: add Intel OPA hfi1 firmware, dc firmware, PCIe SerDes firmware,
+    platform data for channel tuning on Intel OPA HFI adapter 100 series
+  * misc: add Mediatek VPU video processing unit driver
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 29 Dec 2016 18:37:32 +0100
+ -- Sophie Brun <sophie@freexian.com>  Tue, 18 Apr 2017 14:51:47 +0200
 
 firmware-nonfree (20161130-2) unstable; urgency=medium
 
@@ -100,6 +121,35 @@ firmware-nonfree (20160824-1) unstable; urgency=medium
     exception has been used
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 18 Sep 2016 04:15:29 +0100
+
+firmware-nonfree (20160712-0kali1) kali-dev; urgency=medium
+
+  * New upstream version
+    - Upstream version is commit 1dc99be22222fbf88adc98d85f8ffb7529c6c4e3,
+      dated 2016-07-11
+  * misc-nonfree: Include Chelsio firmware T4 and T5, version 1.15.37.0
+  * iwlwifi: Include Intel Wireless 3160, 7260, 7265, 7265D firmware
+    version 17.352738.0
+  * iwlwifi: Include Intel Wireless 3168, 7265D, 8000C, 8265 firmware
+    version 21.302800.0 and 22.361476.0
+  * amd-graphics: Include microcode for "Polaris10" and "Polaris11" chips
+    supported by the amdgpu driver
+  * atheros: Include firmware for Atheros AR3012 rev 31010100 and for
+    Qualcomm Atheros QCA9377 and QCA6174 adapters supported by the
+    ath10k driver
+  * Broadcom: Include Broadcom BCM4366b firmware for use with the
+    brcmfmac driver
+  * misc-nonfree: Update Intel "Broxton" video interface firmware to
+    version 1.07, Intel "Skylake" DMC firmware version 1.26 and include
+    Intel "Skylake" GuC firmware version 6.1 and Intel "Kabylate" firmware
+    version 1.01
+  * misc-nonfree: Include Intel Wireless 8264 Bluetooth firmware
+  * realtek: Include RTL8192EU and RTL8723BU
+  * ti-connectivity: Include TIi BlueTooth driver version 7.2.31 and TI WL18xx
+    firmware, ABI 4
+  * Update to linux-support 4.6.0-kali1
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 12 Jul 2016 10:06:30 +0200
 
 firmware-nonfree (20160110-1) unstable; urgency=medium
 

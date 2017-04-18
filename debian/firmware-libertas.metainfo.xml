@@ -37,6 +37,7 @@ mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers.
     <firmware type="runtime">mrvl/pcie8897_uapsta.bin</firmware>
     <firmware type="runtime">mrvl/pcieuart8997_combo_v4.bin</firmware>
     <firmware type="runtime">mrvl/pcieusb8997_combo_v4.bin</firmware>
+    <firmware type="runtime">mrvl/pcie8997_wlan_v4.bin</firmware>
     <firmware type="runtime">mrvl/sd8688.bin</firmware>
     <firmware type="runtime">mrvl/sd8688_helper.bin</firmware>
     <firmware type="runtime">mrvl/sd8787_uapsta.bin</firmware>
