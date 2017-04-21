@@ -1,4 +1,10 @@
-firmware-nonfree (20170404-0kali1) kali-dev; urgency=medium
+firmware-nonfree (20170404-0parrot0) testing; urgency=medium
+
+  * Import into Parrot.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 22 Apr 2017 01:12:26 +0200
+
+firmware-nonfree (20170404-0kali1) experimental; urgency=medium
 
   * New upstream version
    - Upstream version is commit b14134583c2a15d4404695f72cb523daedb877ab,
